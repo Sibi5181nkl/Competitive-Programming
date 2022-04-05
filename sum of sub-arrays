@@ -1,0 +1,19 @@
+from itertools import combinations
+def sumofsubarrays():
+  k=3
+  s=[]
+  d=0
+  for i in range(k+1):
+   if i==0 :
+     pass
+   else :  
+     for combo in combinations([1,9,4], i):
+      print(combo)
+      s.append(combo)
+  print (s)
+  for i in range(len(s)):
+    d=d+len(s[i])
+  print(d)  
+
+if __name__=="__main__":   
+ sumofsubarrays()  
