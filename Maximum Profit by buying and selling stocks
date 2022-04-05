@@ -1,0 +1,14 @@
+def buyorsell():
+  X=[100, 180, 260, 310,2000,30,75, 40, 535, 695]
+  print("buy on 1st day")
+  for i in range(len(X)-1):
+     if X[i]<X[i+1] :
+      pass 
+     else :
+      print("sell on "+str(i)+"th day") 
+      print("buy on "+str(i+1)+"th day")
+      pass
+  print("sell on last day")  
+
+if __name__=="__main__":          
+ buyorsell()
