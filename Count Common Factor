@@ -1,0 +1,16 @@
+def intergerfinder():
+  s=[]
+  A=int(input("enter A"))
+  B=int(input("enter B"))
+
+  if (A>0 and A<10**12+1 and B>0 and B<10**12+1):
+   for i in range(2,A+1):
+    if A%i==0 and B%i==0 :
+      s.append(i)
+    else:
+      pass
+  else:
+    pass    
+  print(len(s))       
+if __name__=="__main__": 
+ intergerfinder()
